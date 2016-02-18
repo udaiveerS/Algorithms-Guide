@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Udaiveer&#39;s Algorithms Guide</title>
+    <description>This is my attemp to solve a bunch of algorithm and math question. The question are  pulled from various sources. I will not state the exact question when pulling from  a &amp;#169 book. How ever I will provide the book name and version so you can refrence it. 
+</description>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 18 Feb 2016 02:34:19 -0800</pubDate>
+    <lastBuildDate>Thu, 18 Feb 2016 02:34:19 -0800</lastBuildDate>
+    <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>Binary Search-Q1</title>
+        <description>&lt;p&gt;This Question is an recursive implementation of binary search&lt;/p&gt;
+
+&lt;h4 id=&quot;sources&quot;&gt;Sources&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Cracking the code interview 5th edition&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Thu, 18 Feb 2016 00:00:00 -0800</pubDate>
+        <link>http://yourdomain.com/search/2016/02/18/Q1.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/search/2016/02/18/Q1.html</guid>
+        
+        
+        <category>search</category>
+        
+      </item>
+    
+      <item>
+        <title>Angles &amp; Degrees-Q1</title>
+        <description>&lt;p&gt;This Question is the first question for cracking the code interview&lt;/p&gt;
+
+&lt;h4 id=&quot;sources&quot;&gt;Sources&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Cracking the code interview 5th edition&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Thu, 18 Feb 2016 00:00:00 -0800</pubDate>
+        <link>http://yourdomain.com/numbers/2016/02/18/Q1.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/numbers/2016/02/18/Q1.html</guid>
+        
+        
+        <category>numbers</category>
+        
+      </item>
+    
+      <item>
+        <title>My Algorithms Guide</title>
+        <description>&lt;p&gt;This project is a list of question that I am going through to prepare for a 
+general tech interview. Not only is this great for interview prep, but also
+helps to refresh general CS knowledge. The questions are a mixed set from various sources.
+I will try to keep the sources as up to date as possible.&lt;/p&gt;
+
+&lt;h4 id=&quot;sources&quot;&gt;Sources&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Cracking the code interview 5th edition&lt;/li&gt;
+  &lt;li&gt;Glassdoor&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Fri, 12 Feb 2016 00:00:00 -0800</pubDate>
+        <link>http://yourdomain.com/2016/02/12/my-algorithms-guide.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/02/12/my-algorithms-guide.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
