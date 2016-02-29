@@ -13,9 +13,9 @@ layout: default
       <ul id="numbers" class="collapse">  
       {% for post in site.categories.numbers %}
           <li>
-            <a class="collapse-post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </li>
-          {{ post.title }}
+          {{ post.url }}
       {% endfor %}
       </ul>
 
@@ -27,9 +27,9 @@ layout: default
       <ul id="search" class="collapse">  
       {% for post in site.categories.search %}
           <li>
-            <a class="collapse-post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <aref="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </li>
-          {{ post.title }}
+          {{ post.url }}
       {% endfor %}
       </ul>
 
