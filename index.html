@@ -5,20 +5,32 @@ layout: default
 <div class="home">
 
   <ul class="post-list">
+    <!-- Numbers category  -->
     <li > 
-        <a href="#numbers" data-toggle="collapse"> numbers </a>
+        <a href="#numbers" class="problem-category" data-toggle="collapse"> Numbers </a>
     </li>
-      <ul id="numbers" class="collapse">
-      {% for post in site.posts %}
-        <li>
-          <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
-          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </li>
+      <ul id="numbers" class="collapse">  
+      {% for post in site.categories.numbers %}
+          <li>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </li>
       {% endfor %}
       </ul>
+
+    <!-- search category -->
+    <li > 
+        <a href="#search" class="problem-category" data-toggle="collapse"> Search </a>
+    </li>
+      <ul id="search" class="collapse">  
+      {% for post in site.categories.search %}
+          <li>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </li>
+      {% endfor %}
+      </ul>
+      
+    <!-- trees  -->
   </ul>
-
-
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>

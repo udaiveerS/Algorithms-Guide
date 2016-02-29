@@ -2,6 +2,10 @@
     margin-bottom: 0px !important;
 }
 
-.small-font-link {
+.footer-col-wrapper {
   font-size: .82em !important;
+}
+
+.problem-category {
+	font-size: 1.5em; 
 }
