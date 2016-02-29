@@ -1,0 +1,23 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Udaiveer's Algorithms Guide
+email: uda4000@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  This is my attemp to solve a bunch of algorithm and math question. The question are 
+  pulled from various sources. I will not state the exact question when pulling from 
+  a &#169 book. How ever I will provide the book name and version
+  so you can refrence it. 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: uda4000
+github_username:  UdaiveerS
+medium: https://medium.com/@uda
+linkedin: https://www.linkedin.com/pub/udaiveerS
+# Build settings
+markdown: kramdown
