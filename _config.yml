@@ -13,7 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
   pulled from various sources. I will not state the exact question when pulling from 
   a &#169 book. How ever I will provide the book name and version
   so you can refrence it. 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/Algorithms-Guide" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: uda4000
 github_username:  UdaiveerS

@@ -4,10 +4,10 @@
     <title>Udaiveer&#39;s Algorithms Guide</title>
     <description>This is my attemp to solve a bunch of algorithm and math question. The question are  pulled from various sources. I will not state the exact question when pulling from  a &amp;#169 book. How ever I will provide the book name and version so you can refrence it. 
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 18 Feb 2016 02:34:19 -0800</pubDate>
-    <lastBuildDate>Thu, 18 Feb 2016 02:34:19 -0800</lastBuildDate>
+    <link>http://yourdomain.com/Algorithms-Guide/</link>
+    <atom:link href="http://yourdomain.com/Algorithms-Guide/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 29 Feb 2016 00:54:11 -0800</pubDate>
+    <lastBuildDate>Mon, 29 Feb 2016 00:54:11 -0800</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -21,8 +21,8 @@
 
 </description>
         <pubDate>Thu, 18 Feb 2016 00:00:00 -0800</pubDate>
-        <link>http://yourdomain.com/search/2016/02/18/Q1.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/search/2016/02/18/Q1.html</guid>
+        <link>http://yourdomain.com/Algorithms-Guide/search/2016/02/18/Q1.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/Algorithms-Guide/search/2016/02/18/Q1.html</guid>
         
         
         <category>search</category>
@@ -40,8 +40,8 @@
 
 </description>
         <pubDate>Thu, 18 Feb 2016 00:00:00 -0800</pubDate>
-        <link>http://yourdomain.com/numbers/2016/02/18/Q1.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/numbers/2016/02/18/Q1.html</guid>
+        <link>http://yourdomain.com/Algorithms-Guide/numbers/2016/02/18/Q1.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/Algorithms-Guide/numbers/2016/02/18/Q1.html</guid>
         
         
         <category>numbers</category>
@@ -63,8 +63,8 @@ I will try to keep the sources as up to date as possible.&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 12 Feb 2016 00:00:00 -0800</pubDate>
-        <link>http://yourdomain.com/2016/02/12/my-algorithms-guide.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/02/12/my-algorithms-guide.html</guid>
+        <link>http://yourdomain.com/Algorithms-Guide/2016/02/12/my-algorithms-guide.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/Algorithms-Guide/2016/02/12/my-algorithms-guide.html</guid>
         
         
       </item>

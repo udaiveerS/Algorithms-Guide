@@ -7,14 +7,14 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a> </li>
+          <li>Email: <a class="small-font-link" href="mailto:{{ site.email }}">{{ site.email }}</a> </li>
           <li>Medium: 
-            <a href="{{ site.medium }}">
+            <a class="small-font-link" href="{{ site.medium }}">
                 {{ site.medium }} 
             </a>
           </li> 
           <li>LinkedIn: 
-              <a href="https://www.linkedin.com/pub/udaiveer-singh/3b/303/b8a">
+              <a class="small-font-link" href="https://www.linkedin.com/pub/udaiveer-singh/3b/303/b8a">
                 linkedin.com/n/udaiveerS
               </a>
           </li>
@@ -22,7 +22,7 @@
       </div>
 
       <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
+        <ul class="small-font-link social-media-list">
           {% if site.github_username %}
           <li>
             {% include icon-github.html username=site.github_username %}

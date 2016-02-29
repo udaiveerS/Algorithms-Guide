@@ -1,3 +1,7 @@
 .post-list > li {
     margin-bottom: 0px !important;
 }
+
+.small-font-link {
+  font-size: .82em !important;
+}
