@@ -6,28 +6,30 @@ layout: default
 
   <ul class="post-list">
     <!-- Numbers category  -->
-    <li > 
-        <a href="#numbers" id="numbers-link" class="problem-category" data-toggle="collapse"> Numbers 
-        <span class="arrow"> &#x25B2; <span></a>
+    <li> 
+        <a href="#numbers" id="numbers-link" class="problem-category" data-toggle="collapse">Numbers</a>
+        <span class="arrow"> &#x25B2; <span>
     </li>
       <ul id="numbers" class="collapse">  
       {% for post in site.categories.numbers %}
           <li>
             <a class="collapse-post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </li>
+          {{ post.title }}
       {% endfor %}
       </ul>
 
     <!-- search category -->
     <li > 
-        <a href="#search" id="search-link" class="problem-category" data-toggle="collapse">Search       
-        <span class="arrow"> &#x25B2; <span></a>
+        <a href="#search" id="search-link" class="problem-category" data-toggle="collapse">Search</a>
+        <span class="arrow"> &#x25B2; <span>
     </li>
       <ul id="search" class="collapse">  
       {% for post in site.categories.search %}
           <li>
             <a class="collapse-post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </li>
+          {{ post.title }}
       {% endfor %}
       </ul>
 
