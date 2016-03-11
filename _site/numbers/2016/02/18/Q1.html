@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Angles &amp; Degrees-Q1</title>
-  <meta name="description" content="This Question is the first question for cracking the code interview">
+  <meta name="description" content="Problem: Given a time, calculate the angle between the hour and minute hands.">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
   integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -65,7 +65,38 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>This Question is the first question for cracking the code interview</p>
+    <p>Problem: Given a time, calculate the angle between the hour and minute hands.</p>
+
+<p>eg. 12:30AM =&gt; 180 degrees, 3:30PM =&gt; 0 degrees, 6:35 =&gt; 30 degrees</p>
+
+<p>For example if the hour hand is at 12 and minute hand is at 30 then the 
+angle between them is 180. My solution to this problem was to
+take 360 degrees and divide it by 12 to get the degrees per hour. 
+Then take 360 degrees and divide it by 60 to get degrees per min.
+Every min represents 6 degrees and each hour represents 30 degrees.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">getAngle</span><span class="p">(</span><span class="kt">int</span> <span class="n">hour</span><span class="o">,</span> <span class="kt">int</span> <span class="n">min</span> <span class="o">)</span> <span class="o">{</span>
+    <span class="c1">//calculate delta degree per hour </span>
+    <span class="kt">int</span> <span class="n">stepHours</span> <span class="o">=</span> <span class="n">DEGREES_IN_CIRCLE</span><span class="o">/</span><span class="n">HOURS_ON_CLOCK</span><span class="o">;</span> 
+    <span class="c1">//calculate delta degree per min </span>
+    <span class="kt">int</span> <span class="n">stepMins</span> <span class="o">=</span> <span class="n">DEGREES_IN_CIRCLE</span><span class="o">/</span><span class="n">MINS_ON_CLOCK</span><span class="o">;</span> 
+    
+    <span class="k">return</span> <span class="n">Math</span><span class="o">.</span><span class="na">abs</span><span class="o">(</span><span class="n">stepHours</span><span class="o">*</span><span class="n">hour</span> <span class="o">-</span> <span class="n">stepMins</span><span class="o">*</span><span class="n">min</span><span class="o">);</span> 
+<span class="o">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>The only thing with this approach is that the angle of the minutes 
+could be larger then the hours so you have to absolute value the number 
+at the end.</p>
+
+<p><a href="https://github.com/udaiveerS/Algorithms-Guide/blob/master/src/numbers/Q1.java">Code</a></p>
 
 <h4 id="sources">Sources</h4>
 <ul>

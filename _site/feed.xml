@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/Algorithms-Guide/</link>
     <atom:link href="http://yourdomain.com/Algorithms-Guide/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 10 Mar 2016 23:55:07 -0800</pubDate>
-    <lastBuildDate>Thu, 10 Mar 2016 23:55:07 -0800</lastBuildDate>
+    <pubDate>Fri, 11 Mar 2016 00:26:02 -0800</pubDate>
+    <lastBuildDate>Fri, 11 Mar 2016 00:26:02 -0800</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -31,7 +31,38 @@
     
       <item>
         <title>Angles &amp; Degrees-Q1</title>
-        <description>&lt;p&gt;This Question is the first question for cracking the code interview&lt;/p&gt;
+        <description>&lt;p&gt;Problem: Given a time, calculate the angle between the hour and minute hands.&lt;/p&gt;
+
+&lt;p&gt;eg. 12:30AM =&amp;gt; 180 degrees, 3:30PM =&amp;gt; 0 degrees, 6:35 =&amp;gt; 30 degrees&lt;/p&gt;
+
+&lt;p&gt;For example if the hour hand is at 12 and minute hand is at 30 then the 
+angle between them is 180. My solution to this problem was to
+take 360 degrees and divide it by 12 to get the degrees per hour. 
+Then take 360 degrees and divide it by 60 to get degrees per min.
+Every min represents 6 degrees and each hour represents 30 degrees.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getAngle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hour&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//calculate delta degree per hour &lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stepHours&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DEGREES_IN_CIRCLE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HOURS_ON_CLOCK&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+    &lt;span class=&quot;c1&quot;&gt;//calculate delta degree per min &lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stepMins&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DEGREES_IN_CIRCLE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MINS_ON_CLOCK&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+    
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stepHours&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hour&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stepMins&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; 
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The only thing with this approach is that the angle of the minutes 
+could be larger then the hours so you have to absolute value the number 
+at the end.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/udaiveerS/Algorithms-Guide/blob/master/src/numbers/Q1.java&quot;&gt;Code&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;sources&quot;&gt;Sources&lt;/h4&gt;
 &lt;ul&gt;
