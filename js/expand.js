@@ -1,3 +1,5 @@
 $(document).ready(function() {
-	$(".collapse-post").collapse('toggle');
+	$("#numbers-link").trigger('click');
+	$("#search-link").trigger('click');
+
 })
