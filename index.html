@@ -5,6 +5,19 @@ layout: default
 <div class="home">
 
   <ul class="post-list">
+    <!-- Time Complexity  -->
+    <li> 
+        <a href="#time" id="time-link" class="problem-category" data-toggle="collapse">Time Complexity</a>
+        <span class="arrow"> &#x25B2; <span>
+    </li>
+      <ul id="time" class="collapse">  
+      {% for post in site.categories.time %}
+          <li>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </li>
+      {% endfor %}
+      </ul>
+
     <!-- Numbers category  -->
     <li> 
         <a href="#numbers" id="numbers-link" class="problem-category" data-toggle="collapse">Numbers</a>
