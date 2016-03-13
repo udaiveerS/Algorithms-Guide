@@ -14,3 +14,12 @@
 	font-size: .5em;
 	text-decoration: none;
 }
+
+td {
+	padding: 3px;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+

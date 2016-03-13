@@ -6,12 +6,12 @@
 </description>
     <link>http://yourdomain.com/Algorithms-Guide/</link>
     <atom:link href="http://yourdomain.com/Algorithms-Guide/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Mar 2016 00:05:45 -0800</pubDate>
-    <lastBuildDate>Sun, 13 Mar 2016 00:05:45 -0800</lastBuildDate>
+    <pubDate>Sun, 13 Mar 2016 01:30:48 -0800</pubDate>
+    <lastBuildDate>Sun, 13 Mar 2016 01:30:48 -0800</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
-        <title>Binary Search-Q1</title>
+        <title>Runtime of for loop-Q1</title>
         <description>&lt;p&gt;Problem: Find the time complexity for a nested for loop.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
@@ -35,17 +35,48 @@
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;For this problem i found that the best approach is to only worry about how the 
-number of times the inner most loop is executed because it will most likely be the highest order of magnitude in terms of work.&lt;/p&gt;
+&lt;p&gt;For this problem I found that the best approach is to unroll the loops until the inner most loop. The inner most loop is the highest order of magnitude in terms of work. The goal is to find a formula that gives you the additive sum for all the work done. It is best to get familiar with arithmetic series and the best source for this is &lt;a href=&quot;https://www.khanacademy.org/math/integral-calculus/sequences-series-approx-calc/calculus-series/v/sum-of-n-squares-1&quot;&gt;Khan Academy&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;The first loop happens n times. The next loop happens i^2&lt;/p&gt;
-&lt;div class=&quot;math&quot;&gt;
-f(x) = \sqrt{1+x} \quad (x \ge  -1)  &lt;/div&gt;
-&lt;p&gt;Some other text here. &lt;/p&gt;
-&lt;div class=&quot;math&quot;&gt;
-f(x) = \sqrt{1+x}, \quad x \ge -1  &lt;/div&gt;
+&lt;div&gt;
+    &lt;table style=&quot;margin: 0 auto;&quot;&gt;
+        &lt;tr&gt;
+            &lt;td&gt;$$
+                i = 1 \\
+                j = 1 \\
+                1 \times  \frac{n}{2}
+                $$
+            &lt;/td&gt;
+            &lt;td&gt;$$
+                i = 2 \\              
+                j = 4 \\
+                4 \times \frac{n}{2}
+                $$
+            &lt;/td&gt;   
+            &lt;td&gt;
+                $$
+                i = 3 \\              
+                j = 9 \\
+                9 \times \frac{n}{2}
+                $$
+            &lt;/td&gt;            
+            &lt;td&gt;
+                $$
+                i = 4 \\               
+                j = 9 \\
+                16 \times \frac{n}{2}
+                $$
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Answer: O(n^4)&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;1 \times  \frac{n}{2} + 4 \times \frac{n}{2}  + 9 \times \frac{n}{2} + 16 \times \frac{n}{2} ... \\
+\frac{n}{2} (1 + 4 + 9 + 16 \; + \; ...) \Rightarrow \frac{n}{2} \times\sum_{i=0}^n i^2 \\
+\sum_{i=0}^n i^2 = \frac{n (n + 1) (2n + 1)}{6} \Rightarrow \\
+\frac{n}{2} \times\sum_{i=0}^n i^2 = \frac{n (n + 1) (2n + 1)}{6} \\
+runtime = \frac{n^2 (n + 1) (2n + 1)}{12}&lt;/script&gt;
+
+&lt;p&gt;Answer: &lt;script type=&quot;math/tex&quot;&gt;O(n^4)&lt;/script&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 12 Mar 2016 00:00:00 -0800</pubDate>

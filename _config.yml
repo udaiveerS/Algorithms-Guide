@@ -21,5 +21,3 @@ medium: https://medium.com/@uda
 linkedin: https://www.linkedin.com/pub/udaiveerS
 # Build settings
 markdown: kramdown
-kramdown:
-  math_engine: mathjax
