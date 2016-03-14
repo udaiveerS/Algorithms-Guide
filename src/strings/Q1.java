@@ -1,6 +1,6 @@
 package strings;
 
-public class Palindrome {
+public class Q1 {
 
 	public static boolean palindrom(String s, int i, int j) {
 		if( i > j || i == j) {

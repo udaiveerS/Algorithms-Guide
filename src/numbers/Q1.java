@@ -17,8 +17,8 @@ public class Q1 {
 	}
 	
 	public static void main(String[] args) {
-		int hour = 1;
-		int min = 55;		
+		int hour = 6;
+		int min = 35;		
 		System.out.println(getAngle(hour, min));
 	}
 }
