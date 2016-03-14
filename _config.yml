@@ -9,7 +9,7 @@
 title: Udaiveer's Algorithms Guide
 email: uda4000@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  This is my attemp to solve a bunch of algorithm and math question. The question are 
+  This is my attempt to solve a bunch of algorithm and math question. The question are 
   pulled from various sources and cited when necessary. 
 baseurl: "/Algorithms-Guide" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
