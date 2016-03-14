@@ -5,6 +5,7 @@ layout: default
 <div class="home">
 
   <ul class="post-list">
+
     <!-- Time Complexity  -->
     <li> 
         <a href="#time" id="time-link" class="problem-category" data-toggle="collapse">Time Complexity</a>
@@ -20,6 +21,18 @@ layout: default
 
     <!-- Numbers category  -->
     <li> 
+        <a href="#strings" id="numbers-link" class="problem-category" data-toggle="collapse">Strings</a>
+        <span class="arrow"> &#x25B2; <span>
+    </li>
+      <ul id="strings" class="collapse">  
+      {% for post in site.categories.strings %}
+          <li>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </li>
+      {% endfor %}
+      </ul>
+
+    <li> 
         <a href="#numbers" id="numbers-link" class="problem-category" data-toggle="collapse">Numbers</a>
         <span class="arrow"> &#x25B2; <span>
     </li>
@@ -29,7 +42,7 @@ layout: default
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </li>
       {% endfor %}
-      </ul>
+    </ul>
 
     <!-- search category -->
     <li > 
@@ -44,7 +57,6 @@ layout: default
       {% endfor %}
       </ul>
 
-    <!-- trees  -->
   </ul>
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
