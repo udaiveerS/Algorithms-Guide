@@ -6,9 +6,89 @@
 </description>
     <link>http://yourdomain.com/Algorithms-Guide/</link>
     <atom:link href="http://yourdomain.com/Algorithms-Guide/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Mar 2016 01:54:12 -0800</pubDate>
-    <lastBuildDate>Sun, 13 Mar 2016 01:54:12 -0800</lastBuildDate>
+    <pubDate>Mon, 14 Mar 2016 02:23:22 -0700</pubDate>
+    <lastBuildDate>Mon, 14 Mar 2016 02:23:22 -0700</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>Runtime of for loop-Q2</title>
+        <description>&lt;p&gt;Problem: Find the time complexity for a nested for loop.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; 
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;For each iteration of &lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt; the inner loop executes a 100 times.&lt;/p&gt;
+
+&lt;div&gt;
+    &lt;table style=&quot;margin: 0 auto;&quot;&gt;
+        &lt;tr&gt;
+            &lt;td&gt;$$
+                i = 1 \\
+                1 \times  100
+                $$
+            &lt;/td&gt;
+            &lt;td&gt;$$
+                i = 2 \\              
+                2 \times 100
+                $$
+            &lt;/td&gt;   
+            &lt;td&gt;
+                $$
+                i = 3 \\              
+                3 \times 100
+                $$
+            &lt;/td&gt;            
+            &lt;td&gt;
+                $$
+                i = 4 \\               
+                4 \times 100
+                $$
+            &lt;/td&gt;
+            &lt;td&gt;
+                $$
+                i = 5 \\               
+                5 \times 100
+                $$
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;1 \times  100 + 2 \times 100  + 3 \times 100 + 4 \times 100 + 5 \times 100 ... \\
+100 \times (1 + 2 + 3 + 4 + 5 \; + \; ...) \Rightarrow 100 \times\sum_{i=0}^n i \\
+\sum_{i=0}^n i = \frac{n (n + 1)}{2} \Rightarrow \\
+100 \times\sum_{i=0}^n i = \frac{n (n + 1)}{2} \\
+runtime = 100 \times \frac{n (n + 1)}{2}&lt;/script&gt;
+
+&lt;p&gt;Answer: &lt;script type=&quot;math/tex&quot;&gt;O(n^2)&lt;/script&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 12 Mar 2016 00:00:00 -0800</pubDate>
+        <link>http://yourdomain.com/Algorithms-Guide/time/2016/03/12/Q2.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/Algorithms-Guide/time/2016/03/12/Q2.html</guid>
+        
+        
+        <category>time</category>
+        
+      </item>
     
       <item>
         <title>Runtime of for loop-Q1</title>
